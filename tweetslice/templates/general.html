@@ -20,21 +20,21 @@
 	<div style="float:right;font-family: helvetica;font-size:14px;font-style: italic; margin-top:14px;margin-right:12px;">{{c.Date}}</div>
 </div>
 <img style="width:100%;" height="4" src="http://livelovely.com/resource/image/backgrounds/alertEmailHeader.png" />
-	<h1>Lovely Maintenance</h1>
-	<h2>You have a request to fix {{c.name}}'s {{c.type}} issue</h2>
+	<h2>Lovely Maintenance</h2>
+	<h3>You have a request to fix {{c.name}}'s {{c.type}} issue</h3>
 
 	<h3>Description:</h3>
 	<p>{{c.text}}</p>
 
 	{% if c.photourl is defined %}
-	<h3>Photos:</h3>
+	<h3>Photo:</h3>
 	<p><img alt='issuephoto' src="{{c.photourl}}"/></p>
 	{% endif %}
 
 	<h3>What's Next</h3>
 	<p>You can contact one of our recomended contractors to get the job fix. But first reply
 	to this email to respond to the users tweet. We will send them an email as well</p>
-	<ul>
+	<ul style='list-style-type: none;'>
 		<li><div class="businessresult clearfix">
 			<div class="leftcol">
 				<div class="clearfix media-block">
@@ -47,12 +47,12 @@
 					</div>
 					<div class="media-story">
 						<h4 class="itemheading" id="bizTitle0">
-							<a id="bizTitleLink0" href="http://yelp.com/biz/pipeline-plumbing-san-francisco-3">1. 	Pipeline <span class="highlighted">Plumbing</span>
+							<a id="bizTitleLink0" href="http://yelp.com/biz/pipeline-plumbing-san-francisco-3">1. Pipeline <span class="highlighted">Plumbing</span>
 							</a>
 						</h4>
 						<div class="rightcol">
 							<div class="rating">
-								<i class="star-img stars_5" title="5.0 star rating">
+								<i class="star-img stars_5" title="5.0 star rating" style='display:block; width:100%; height:100%; background:url(http://s3-media3.ak.yelpcdn.com/assets/2/www/img/1109731a68b3/ico/stars/v2/stars_map.png)'>
 									<img alt="5.0 star rating" class="offscreen" height="303" src="http://s3-media3.ak.yelpcdn.com/assets/2/www/img/1109731a68b3/ico/stars/v2/stars_map.png" width="84">
 								</i>
 							</div>
