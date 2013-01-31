@@ -25,7 +25,7 @@
       <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweetslice/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="56" selection-start="579" selection-end="579" vertical-scroll-proportion="0.5546493">
+            <state line="29" column="17" selection-start="825" selection-end="825" vertical-scroll-proportion="0.42414355">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -36,7 +36,7 @@
       <file leaf-file-name="general.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="55" selection-end="55" vertical-scroll-proportion="-2.3076923">
+            <state line="28" column="16" selection-start="957" selection-end="957" vertical-scroll-proportion="-21.538462">
               <folding />
             </state>
           </provider>
@@ -221,6 +221,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -311,14 +318,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="55" selection-end="55" vertical-scroll-proportion="-2.3076923">
+        <state line="28" column="16" selection-start="957" selection-end="957" vertical-scroll-proportion="-21.538462">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetslice/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="56" selection-start="579" selection-end="579" vertical-scroll-proportion="0.5546493">
+        <state line="29" column="17" selection-start="825" selection-end="825" vertical-scroll-proportion="0.42414355">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

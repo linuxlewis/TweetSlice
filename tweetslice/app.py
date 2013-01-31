@@ -21,7 +21,7 @@ twitter_keys = []
 app_key = 'blah'
 sendgrid_key = 'ok'
 
-types = ['washer', 'dryer', 'toliet', 'sink', 'dishwasher', 'broken']
+types = ['washer', 'dryer', 'toilet', 'sink', 'dishwasher', 'broken']
 
 user = {'email':'sam@livelovely.com', 'name':'Sam Bolgert'}
 
@@ -48,22 +48,29 @@ def run():
 		time.sleep(60)
 
 def check_tweet_for_maintaince(tweet):
-	main = False
-	for hash in tweet['entities']['hashtags']:
-		if hash['text'] == 'maintenance':
-			print 'Maintenance Tweet Found!'
-			main = True
-			break
+	if tweet['in_reply_to_status_id_str'] is None:
+		urgent = False
+		for hash in tweet['entities']['hashtags']:
+			if hash['text'] == 'asap':
+				print 'Urgent Tweet Found!'
+				urgent = True
+				break
 
-	#search for other types
-	if main is True:
+		#search for other types
+		#if main is True:
+		email = False
 		for type in types:
 			match = re.search(type, tweet['text'])
 			if match is not None:
-				send_email_to_user(user, type, tweet)
+				print 'Type Email Sent'
+				send_email_to_user(user, type, tweet, urgent)
+				email = True
 				break
 
-def send_email_to_user(user, type, tweet):
+		if email is False:
+			send_email_to_user(user, '', tweet, urgent)
+
+def send_email_to_user(user, type, tweet, urgent=False):
 	print 'Sending Email'
 	c = dict()
 	c['type'] = type
@@ -76,7 +83,12 @@ def send_email_to_user(user, type, tweet):
 	html = tmp.render({'c':c})
 	#html = render('/messages/alert.html')
 	from_ad = '%s+%s@maintenance.livelovely.com' % (str(tweet['user']['screen_name']), str(tweet['id_str']))
-	_sendHtmlEmail(from_ad, user['email'], "New Maintenance request from: " + tweet['user']['screen_name'] ,None, html, 'Lovely Maintenance', user['name'])
+
+	if urgent is False:
+		subject = "New Maintenance request from: " + tweet['user']['screen_name']
+	else:
+		subject = "Urgent: New Emergency Maintenance request from: " + tweet['user']['screen_name']
+	_sendHtmlEmail(from_ad, user['email'], subject ,None, html, 'Lovely Maintenance', user['name'])
 
 def _sendHtmlEmail(fromAddress, toAddress, title, textMessage, htmlMessage, fromName=None, toName=None, attachments=None, ignoreOverride=False, sender=None):
 
