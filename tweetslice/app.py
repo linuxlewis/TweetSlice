@@ -23,7 +23,7 @@ sendgrid_key = 'ok'
 
 types = ['washer', 'dryer', 'toilet', 'sink', 'dishwasher', 'broken']
 
-user = {'email':'sam@livelovely.com', 'name':'Sam Bolgert'}
+user = {'email':'sam@livelovely.com', 'name':'Sam Bolgert', 'first':True}
 
 def run():
 	print 'Starting TweetSlice'
@@ -76,6 +76,8 @@ def send_email_to_user(user, type, tweet, urgent=False):
 	c['type'] = type
 	c['name'] = tweet['user']['name']
 	c['text'] = tweet['text']
+	c['first'] = user['first']
+	user['first'] = False
 	if tweet['entities'].has_key('media'):
 		c['photourl'] = tweet['entities']['media'][0]['media_url_https']
 	env = Environment(loader=PackageLoader('tweetslice', 'templates'))

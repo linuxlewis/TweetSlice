@@ -25,7 +25,7 @@
       <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweetslice/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="20" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.0">
+            <state line="76" column="24" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -36,7 +36,7 @@
       <file leaf-file-name="general.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="38" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.17035775">
+            <state line="26" column="24" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.3407155">
               <folding />
             </state>
           </provider>
@@ -318,7 +318,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tweetslice/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="20" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.0">
+        <state line="76" column="24" selection-start="2046" selection-end="2046" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -327,7 +327,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="38" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.17035775">
+        <state line="26" column="24" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.3407155">
           <folding />
         </state>
       </provider>
