@@ -36,7 +36,7 @@
       <file leaf-file-name="general.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.0">
+            <state line="88" column="38" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.17035775">
               <folding />
             </state>
           </provider>
@@ -327,7 +327,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.0">
+        <state line="88" column="38" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.17035775">
           <folding />
         </state>
       </provider>
