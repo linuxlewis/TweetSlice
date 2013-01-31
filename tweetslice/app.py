@@ -80,6 +80,7 @@ def send_email_to_user(user, type, tweet, urgent=False):
 	user['first'] = False
 	if tweet['entities'].has_key('media'):
 		c['photourl'] = tweet['entities']['media'][0]['media_url_https']
+
 	env = Environment(loader=PackageLoader('tweetslice', 'templates'))
 	tmp = env.get_template('general.html')
 	html = tmp.render({'c':c})
