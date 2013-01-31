@@ -85,9 +85,9 @@ def send_email_to_user(user, type, tweet, urgent=False):
 	from_ad = '%s+%s@maintenance.livelovely.com' % (str(tweet['user']['screen_name']), str(tweet['id_str']))
 
 	if urgent is False:
-		subject = "Request to fix %s's maintenance issue" + tweet['user']['screen_name']
+		subject = "Request to fix %s's maintenance issue" % (tweet['user']['name'])
 	else:
-		subject = "URGENT: Request to fix %s's maintenance issue " % tweet['user']['name']
+		subject = "URGENT: Request to fix %s's maintenance issue " % (tweet['user']['name'])
 	_sendHtmlEmail(from_ad, user['email'], subject ,None, html, 'Lovely Maintenance', user['name'])
 
 def _sendHtmlEmail(fromAddress, toAddress, title, textMessage, htmlMessage, fromName=None, toName=None, attachments=None, ignoreOverride=False, sender=None):
