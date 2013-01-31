@@ -75,8 +75,8 @@ def send_email_to_user(user, type, tweet):
 	tmp = env.get_template('general.html')
 	html = tmp.render({'c':c})
 	#html = render('/messages/alert.html')
-	to = '%s+%s@maintenance.livelovely.com' % (str(tweet['user']['screen_name']), str(tweet['id_str']))
-	_sendHtmlEmail(to, user['email'], "New Maintenance request from: " + tweet['user']['screen_name'] ,None, html, 'Lovely Maintenance', user['name'])
+	from_ad = '%s+%s@maintenance.livelovely.com' % (str(tweet['user']['screen_name']), str(tweet['id_str']))
+	_sendHtmlEmail(from_ad, user['email'], "New Maintenance request from: " + tweet['user']['screen_name'] ,None, html, 'Lovely Maintenance', user['name'])
 
 def _sendHtmlEmail(fromAddress, toAddress, title, textMessage, htmlMessage, fromName=None, toName=None, attachments=None, ignoreOverride=False, sender=None):
 
