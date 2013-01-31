@@ -25,15 +25,12 @@ types = ['washer', 'dryer', 'toliet', 'sink', 'dishwasher', 'broken']
 
 user = {'email':'sam@livelovely.com', 'name':'Sam Bolgert'}
 
-
-
 def run():
 	print 'Starting TweetSlice'
 	#start threads
+	last_tweet = None
 	while True:
-		last_tweet = None
-
-		#create twitter
+	#create twitter
 		t = Twitter(
 			auth=OAuth(oauth_token, oauth_secret,
 				consumer_key, consumer_secret)
@@ -71,6 +68,7 @@ def send_email_to_user(user, type, tweet):
 	c['type'] = type
 	c['name'] = tweet['user']['name']
 	c['text'] = tweet['text']
+	c['photourl'] = tweet['entities']['media']['media_url_https']
 	env = Environment(loader=PackageLoader('tweetslice', 'templates'))
 	tmp = env.get_template('general.html')
 	html = tmp.render({'c':c})
