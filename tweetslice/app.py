@@ -38,7 +38,7 @@ def run():
 		tweets = t.statuses.mentions_timeline()
 
 		#for tweets from old to new
-		for tweet in tweets:
+		for tweet in tweets.reverse():
 			print 'Checking Tweets'
 			#if tweet is new
 			created_at = datetime.strptime(tweet['created_at'], '%a %b %d %H:%M:%S +0000 %Y')
