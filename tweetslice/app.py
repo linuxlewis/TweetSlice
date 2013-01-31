@@ -68,7 +68,7 @@ def send_email_to_user(user, type, tweet):
 	c['type'] = type
 	c['name'] = tweet['user']['name']
 	c['text'] = tweet['text']
-	c['photourl'] = tweet['entities']['media']['media_url_https']
+	c['photourl'] = tweet['entities']['media'][0]['media_url_https']
 	env = Environment(loader=PackageLoader('tweetslice', 'templates'))
 	tmp = env.get_template('general.html')
 	html = tmp.render({'c':c})
