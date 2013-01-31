@@ -88,7 +88,7 @@ def send_email_to_user(user, type, tweet, urgent=False):
 		subject = "Request to fix %s's maintenance issue" % (tweet['user']['name'])
 	else:
 		subject = "URGENT: Request to fix %s's maintenance issue " % (tweet['user']['name'])
-	_sendHtmlEmail(from_ad, user['email'], subject ,None, html, 'Lovely Maintenance', user['name'])
+	_sendHtmlEmail(from_ad, user['email'], subject ,None, html, 'Lovely FixIt', user['name'])
 
 def _sendHtmlEmail(fromAddress, toAddress, title, textMessage, htmlMessage, fromName=None, toName=None, attachments=None, ignoreOverride=False, sender=None):
 

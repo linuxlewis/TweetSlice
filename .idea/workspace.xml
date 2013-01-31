@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweetslice/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="79" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.45676997">
+            <state line="112" column="20" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -33,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="general.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="general.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="81" selection-start="1879" selection-end="1879" vertical-scroll-proportion="-10.769231">
+            <state line="76" column="55" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.57921636">
               <folding />
             </state>
           </provider>
@@ -54,8 +54,8 @@
       <list>
         <option value="$PROJECT_DIR$/templates/general.html" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/tweetslice/templates/general.html" />
         <option value="$PROJECT_DIR$/tweetslice/app.py" />
+        <option value="$PROJECT_DIR$/tweetslice/templates/general.html" />
       </list>
     </option>
   </component>
@@ -316,19 +316,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="81" selection-start="1879" selection-end="1879" vertical-scroll-proportion="-10.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tweetslice/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="79" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.45676997">
+        <state line="112" column="20" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweetslice/templates/general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="55" selection-start="2864" selection-end="2864" vertical-scroll-proportion="0.57921636">
+          <folding />
         </state>
       </provider>
     </entry>
